@@ -1,5 +1,4 @@
 from __future__ import annotations
-
 import random
 from dataclasses import dataclass
 from typing import List, Optional, Dict
@@ -13,7 +12,7 @@ import streamlit as st
 # --- Model parameters ---
 INCOME_PER_UNIT = 250
 COST_PER_CAPACITY_UNIT = 100
-DAYS = 10
+DAYS = 30
 DEMAND_MIN, DEMAND_MAX = 50, 250
 
 
