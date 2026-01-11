@@ -272,6 +272,7 @@ if show_sample:
     last_seed = hist.iloc[-1]["base_seed"]
     sample_seed = None
     try:
+from __future__ import annotations
         sample_seed = int(last_seed) + 999 if str(last_seed).strip() != "" else None
     except ValueError:
         sample_seed = None
@@ -301,8 +302,7 @@ if show_sample:
         plt.plot(sample_df["day"], sample_df["cum_profit"], marker="o")
         plt.xlabel("Day")
         plt.ylabel("Cumulative profit")
-        st.pyplot(fig, clear_figure=True)from __future__ import annotations
-
+        st.pyplot(fig, clear_figure=True)
 import random
 from dataclasses import dataclass
 from typing import List, Optional, Dict
